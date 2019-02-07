@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#cd2626">
+        <ImageView 
+            android:id="@+id/img_return"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/base_action_bar_back_normal"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择城市"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+    <EditText 
+        android:id="@+id/et_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="8dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/et_background"
+        android:hint="搜索全国城市(中文或拼音)"
+        android:textColorHint="#cdcd00"/>
+    <ListView
+        android:id="@+id/lv_city_list" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="#d7d7d7">
+        
+    </ListView>
+</LinearLayout>
